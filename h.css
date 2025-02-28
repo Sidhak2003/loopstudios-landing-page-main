@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#bimage {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the image covers the entire element */
+  height: 100vh; /* Set a height for the element (adjust as needed) */
+}
+
+.cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 6.7rem;
+}
+
+.navlinks {
+  display: flex;
+  gap: 20px;
+}
+
+.navlinks a {
+  color: white;
+  font-family: "Alata", sans-serif;
+  text-decoration: none;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none; /* Hide by default */
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white; /* Match the color of your links */
+}
+
+.hero {
+  height: 100vh;
+  margin-top: 5rem;
+}
+.container {
+  height: 42%;
+  width: 50%;
+  border: 2px solid white;
+  margin-left: 6.7rem;
+}
+
+.container h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: white;
+  padding: 2rem 4rem 2rem 2.5rem;
+  font-size: 4rem;
+}
+
+#overlap {
+  display: flex;
+}
+
+.overimage {
+  position: absolute;
+  margin-left: 6.7rem;
+  margin-top: 7rem;
+}
+
+.overlaptext {
+  background-color: white;
+  margin-left: 43rem;
+  margin-top: 20rem;
+  padding: 4.8rem 4rem 1rem 5rem;
+  z-index: 2;
+}
+
+.overlaptext h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+}
+
+.overlaptext p {
+  font-family: "Alata", sans-serif;
+  color: hsl(0, 0%, 55%);
+  padding-top: 0.7rem;
+}
+
+#second {
+  padding-top: 6%;
+  padding-bottom: 5rem;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4.5rem;
+  align-items: center;
+}
+.heading h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  padding-left: 5.5rem;
+}
+.heading button {
+  height: 2.5rem;
+  width: 8rem;
+  display: flex;
+  font-size: 1.2rem;
+  padding-top: 0.7rem;
+  margin-right: 6.4rem;
+  justify-content: center;
+  background-color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.heading button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.3s ease-out;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 4.5rem;
+}
+.cards h2 {
+  z-index: 1;
+  margin-top: -6rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 0 2rem 2rem 3rem;
+}
+
+.cards img:hover {
+  opacity: 0.2;
+  transition: 0.3s ease;
+}
+
+.cards img:hover + h2 {
+  color: black;
+  font-weight: 500;
+}
+#footer {
+  background-color: black;
+}
+.footlogo {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+.f-logo {
+  padding-left: 5.5rem;
+}
+.icon {
+  padding-right: 5.5rem;
+}
+#about {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+#about a,
+p {
+  color: white;
+}
+.about {
+  display: flex;
+  gap: 2rem;
+  padding-left: 5.4rem;
+}
+.about a {
+  padding-top: 2rem;
+  font-family: "Alata", sans-serif;
+}
+.copy {
+  padding-top: 2rem;
+  padding-right: 5.4rem;
+}
+
+.icon {
+  display: flex;
+  gap: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding-right: 15.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .cards {
+    display: flex;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    gap: 2rem;
+  }
+
+  .cards img {
+    width: 100%;
+  }
+
+  .overimage img {
+    width: 75%;
+  }
+
+  .overlaptext {
+    margin-left: 33.5rem;
+    margin-top: 15rem;
+  }
+
+  .overlaptext h1 {
+    font-size: 2rem;
+  }
+
+  .overlaptext p {
+    font-size: 0.8rem;
+  }
+
+  .cards h2 {
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    margin-top: -4rem;
+  }
+
+  #bimage {
+    height: 70vh;
+  }
+
+  .container {
+    height: 34%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cont {
+    padding: 2rem;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navlinks {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 2rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  .navlinks.active {
+    display: flex;
+  }
+
+  .logo img {
+    width: 80%;
+  }
+
+  #bimage {
+    height: 100vh;
+    background-position: center;
+  }
+
+  .container h1 {
+    font-size: 2.5rem;
+    padding: 2.5rem 2rem 2.5rem 2rem;
+  }
+
+  .container {
+    height: 34%;
+    width: 90%;
+    border: 2px solid white;
+    margin-left: 1.5rem;
+  }
+
+  .hero {
+    margin-top: 9rem;
+  }
+
+  .overimage {
+    width: 100%;
+    margin: 5rem 3rem 0rem 3rem;
+    position: relative;
+    padding: 0;
+  }
+
+  #overlap {
+    flex-direction: column;
+  }
+
+  .overlaptext {
+    margin: 0;
+    padding: 3rem 1rem 1rem 1rem;
+  }
+
+  .overlaptext h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .overlaptext p {
+    text-align: center;
+    margin: 0;
+    padding: 1rem 3rem 0rem 3rem;
+  }
+
+  .heading {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .heading h1 {
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  .heading button {
+    margin: 0;
+    width: 6rem;
+    font-size: 1rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+    max-width: 800px;
+    margin: 0;
+    position: relative;
+  }
+
+  .cards img {
+    width: 100%;
+    height: 120px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: block;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .cards h2{
+    padding-left: 4rem;
+  }
+
+  .footlogo{
+    flex-direction: column;
+  }
+
+  .f-logo{
+    padding: 0rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .icon{
+    padding: 0rem;
+    padding-left: 13.5rem;
+    justify-content: center;
+  }
+
+  .about{
+    display: none;
+  }
+
+  .copy{
+    padding-left: 7rem;
+  }
+}
